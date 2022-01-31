@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="description" content="" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Voltium Explorer</title>
+
+        <link rel="manifest" href="site.webmanifest" />
+        <link rel="apple-touch-icon" href="icon.png" />
+        <link rel="stylesheet" href="css/normalize.css" />
+        <link rel="stylesheet" href="css/main.css" />
+        <link rel="stylesheet" href="css/index.css" />
+        <meta name="theme-color" content="#fafafa" />
+    </head>
+    <body style="background-color: #c89c3d;">
+        <header class="p-3 bg-dark text-white" style="background-color: #272727;">
+                <div class="container" >
+                        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                                <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                                    <svg width="200" height="23" viewBox="0 0 200 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_2_2)">
+                                        <path d="M10.7163 16.8828L14.2334 5.07031H17.6582L12.4595 20H10.2036L10.7163 16.8828ZM7.47607 5.07031L10.9829 16.8828L11.5161 20H9.23975L4.07178 5.07031H7.47607ZM31.1729 12.1865V12.894C31.1729 14.0288 31.019 15.0474 30.7114 15.9497C30.4038 16.8521 29.9697 17.6211 29.4092 18.2568C28.8486 18.8857 28.1787 19.3677 27.3994 19.7026C26.627 20.0376 25.769 20.2051 24.8257 20.2051C23.8892 20.2051 23.0312 20.0376 22.252 19.7026C21.4795 19.3677 20.8096 18.8857 20.2422 18.2568C19.6748 17.6211 19.2339 16.8521 18.9194 15.9497C18.6118 15.0474 18.458 14.0288 18.458 12.894V12.1865C18.458 11.0449 18.6118 10.0264 18.9194 9.13086C19.2271 8.22852 19.6611 7.45947 20.2217 6.82373C20.7891 6.18799 21.459 5.70264 22.2314 5.36768C23.0107 5.03271 23.8687 4.86523 24.8052 4.86523C25.7485 4.86523 26.6064 5.03271 27.3789 5.36768C28.1582 5.70264 28.8281 6.18799 29.3887 6.82373C29.9561 7.45947 30.3936 8.22852 30.7012 9.13086C31.0156 10.0264 31.1729 11.0449 31.1729 12.1865ZM28.0659 12.894V12.166C28.0659 11.373 27.9941 10.6758 27.8506 10.0742C27.707 9.47266 27.4951 8.9668 27.2148 8.55664C26.9346 8.14648 26.5928 7.83887 26.1895 7.63379C25.7861 7.42187 25.3247 7.31592 24.8052 7.31592C24.2856 7.31592 23.8242 7.42187 23.4209 7.63379C23.0244 7.83887 22.686 8.14648 22.4058 8.55664C22.1323 8.9668 21.9238 9.47266 21.7803 10.0742C21.6367 10.6758 21.5649 11.373 21.5649 12.166V12.894C21.5649 13.6802 21.6367 14.3774 21.7803 14.9858C21.9238 15.5874 22.1357 16.0967 22.416 16.5137C22.6963 16.9238 23.0381 17.2349 23.4414 17.4468C23.8447 17.6587 24.3062 17.7646 24.8257 17.7646C25.3452 17.7646 25.8066 17.6587 26.21 17.4468C26.6133 17.2349 26.9517 16.9238 27.2251 16.5137C27.4985 16.0967 27.707 15.5874 27.8506 14.9858C27.9941 14.3774 28.0659 13.6802 28.0659 12.894ZM42.9854 17.6006V20H35.4692V17.6006H42.9854ZM36.4639 5.07031V20H33.3877V5.07031H36.4639ZM49.0864 5.07031V20H46.0205V5.07031H49.0864ZM53.6802 5.07031V7.47998H41.4985V5.07031H53.6802ZM58.7046 5.07031V20H55.6387V5.07031H58.7046ZM69.8301 5.07031H72.896V14.9346C72.896 16.083 72.6499 17.0503 72.1577 17.8364C71.6724 18.6226 70.999 19.2139 70.1377 19.6104C69.2832 20.0068 68.2988 20.2051 67.1846 20.2051C66.0703 20.2051 65.0791 20.0068 64.2109 19.6104C63.3496 19.2139 62.6729 18.6226 62.1807 17.8364C61.6953 17.0503 61.4526 16.083 61.4526 14.9346V5.07031H64.5288V14.9346C64.5288 15.6045 64.6348 16.1514 64.8467 16.5752C65.0586 16.999 65.3628 17.3101 65.7593 17.5083C66.1626 17.7065 66.6377 17.8057 67.1846 17.8057C67.7451 17.8057 68.2202 17.7065 68.6099 17.5083C69.0063 17.3101 69.3071 16.999 69.5122 16.5752C69.7241 16.1514 69.8301 15.6045 69.8301 14.9346V5.07031ZM76.8335 5.07031H79.438L83.2729 16.0317L87.1079 5.07031H89.7124L84.3188 20H82.2271L76.8335 5.07031ZM75.4287 5.07031H78.0229L78.4946 15.7549V20H75.4287V5.07031ZM88.5229 5.07031H91.1274V20H88.0513V15.7549L88.5229 5.07031ZM109.072 17.6006V20H101.125V17.6006H109.072ZM102.13 5.07031V20H99.0537V5.07031H102.13ZM108.036 11.1509V13.4888H101.125V11.1509H108.036ZM109.062 5.07031V7.47998H101.125V5.07031H109.062ZM113.399 5.07031L116.208 10.2793L119.018 5.07031H122.535L118.198 12.4736L122.648 20H119.1L116.208 14.6885L113.317 20H109.749L114.209 12.4736L109.861 5.07031H113.399ZM130.01 14.6782H126.206V12.2788H130.01C130.598 12.2788 131.077 12.1831 131.446 11.9917C131.815 11.7935 132.085 11.52 132.256 11.1714C132.427 10.8228 132.512 10.4297 132.512 9.99219C132.512 9.54785 132.427 9.13428 132.256 8.75146C132.085 8.36865 131.815 8.06104 131.446 7.82861C131.077 7.59619 130.598 7.47998 130.01 7.47998H127.272V20H124.196V5.07031H130.01C131.179 5.07031 132.181 5.28223 133.015 5.70605C133.855 6.12305 134.498 6.70068 134.942 7.43896C135.387 8.17725 135.609 9.02148 135.609 9.97168C135.609 10.9355 135.387 11.7695 134.942 12.4736C134.498 13.1777 133.855 13.7212 133.015 14.104C132.181 14.4868 131.179 14.6782 130.01 14.6782ZM147.329 17.6006V20H139.813V17.6006H147.329ZM140.808 5.07031V20H137.731V5.07031H140.808ZM160.68 12.1865V12.894C160.68 14.0288 160.526 15.0474 160.218 15.9497C159.911 16.8521 159.477 17.6211 158.916 18.2568C158.355 18.8857 157.686 19.3677 156.906 19.7026C156.134 20.0376 155.276 20.2051 154.333 20.2051C153.396 20.2051 152.538 20.0376 151.759 19.7026C150.986 19.3677 150.316 18.8857 149.749 18.2568C149.182 17.6211 148.741 16.8521 148.426 15.9497C148.119 15.0474 147.965 14.0288 147.965 12.894V12.1865C147.965 11.0449 148.119 10.0264 148.426 9.13086C148.734 8.22852 149.168 7.45947 149.729 6.82373C150.296 6.18799 150.966 5.70264 151.738 5.36768C152.518 5.03271 153.375 4.86523 154.312 4.86523C155.255 4.86523 156.113 5.03271 156.886 5.36768C157.665 5.70264 158.335 6.18799 158.896 6.82373C159.463 7.45947 159.9 8.22852 160.208 9.13086C160.522 10.0264 160.68 11.0449 160.68 12.1865ZM157.573 12.894V12.166C157.573 11.373 157.501 10.6758 157.357 10.0742C157.214 9.47266 157.002 8.9668 156.722 8.55664C156.441 8.14648 156.1 7.83887 155.696 7.63379C155.293 7.42187 154.832 7.31592 154.312 7.31592C153.792 7.31592 153.331 7.42187 152.928 7.63379C152.531 7.83887 152.193 8.14648 151.913 8.55664C151.639 8.9668 151.431 9.47266 151.287 10.0742C151.144 10.6758 151.072 11.373 151.072 12.166V12.894C151.072 13.6802 151.144 14.3774 151.287 14.9858C151.431 15.5874 151.643 16.0967 151.923 16.5137C152.203 16.9238 152.545 17.2349 152.948 17.4468C153.352 17.6587 153.813 17.7646 154.333 17.7646C154.852 17.7646 155.313 17.6587 155.717 17.4468C156.12 17.2349 156.458 16.9238 156.732 16.5137C157.005 16.0967 157.214 15.5874 157.357 14.9858C157.501 14.3774 157.573 13.6802 157.573 12.894ZM162.895 5.07031H168.462C169.604 5.07031 170.585 5.24121 171.405 5.58301C172.232 5.9248 172.868 6.43066 173.312 7.10059C173.757 7.77051 173.979 8.59424 173.979 9.57178C173.979 10.3716 173.842 11.0586 173.569 11.6328C173.302 12.2002 172.923 12.6753 172.431 13.0581C171.945 13.4341 171.375 13.7349 170.718 13.9604L169.744 14.4731H164.904L164.884 12.0737H168.483C169.023 12.0737 169.471 11.978 169.826 11.7866C170.182 11.5952 170.448 11.3286 170.626 10.9868C170.811 10.645 170.903 10.2485 170.903 9.79736C170.903 9.31885 170.814 8.90527 170.636 8.55664C170.458 8.20801 170.188 7.94141 169.826 7.75684C169.464 7.57227 169.009 7.47998 168.462 7.47998H165.971V20H162.895V5.07031ZM171.241 20L167.837 13.3452L171.087 13.3247L174.533 19.8564V20H171.241ZM186.366 17.6006V20H178.419V17.6006H186.366ZM179.424 5.07031V20H176.348V5.07031H179.424ZM185.33 11.1509V13.4888H178.419V11.1509H185.33ZM186.355 5.07031V7.47998H178.419V5.07031H186.355ZM188.16 5.07031H193.728C194.87 5.07031 195.851 5.24121 196.671 5.58301C197.498 5.9248 198.134 6.43066 198.578 7.10059C199.022 7.77051 199.245 8.59424 199.245 9.57178C199.245 10.3716 199.108 11.0586 198.834 11.6328C198.568 12.2002 198.188 12.6753 197.696 13.0581C197.211 13.4341 196.64 13.7349 195.984 13.9604L195.01 14.4731H190.17L190.149 12.0737H193.749C194.289 12.0737 194.736 11.978 195.092 11.7866C195.447 11.5952 195.714 11.3286 195.892 10.9868C196.076 10.645 196.168 10.2485 196.168 9.79736C196.168 9.31885 196.08 8.90527 195.902 8.55664C195.724 8.20801 195.454 7.94141 195.092 7.75684C194.729 7.57227 194.275 7.47998 193.728 7.47998H191.236V20H188.16V5.07031ZM196.507 20L193.103 13.3452L196.353 13.3247L199.798 19.8564V20H196.507Z" fill="white"/>
+                                        </g>
+                                        <defs>
+                                        <clipPath id="clip0_2_2">
+                                        <rect width="200" height="23" fill="white"/>
+                                        </clipPath>
+                                        </defs>
+                                    </svg>
+                                        
+                                </a>
+
+                                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0" style="margin-left: 20px;">
+                                        <li><a href="#" class="nav-link px-2 text-white">Wallet</a></li>
+                                        <li><a href="#" class="nav-link px-2 text-white">Exchange</a></li>
+                                        <li><a href="#" class="nav-link px-2 text-white">Explorer</a></li>
+                                        <li><a href="#" class="nav-link px-2 text-white">Resources</a></li>
+                                        <li><a href="#" class="nav-link px-2 text-white">Nodes</a></li>
+                                </ul>
+
+                                <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+                                        <input type="search" class="form-control form-control-dark" placeholder="Search by address/ txn hash/ block" aria-label="Search" />
+                                </form>
+
+                                <div class="text-end">
+                                        <button type="button" class="btn btn-outline-light me-2">Login</button>
+                                        <button type="button" class="btn btn-warning">Sign-up</button>
+                                </div>
+                        </div>
+                </div>
+        </header>
+
+        <div class="container" style="margin-top: 50px;">
+                <div class="row">
+                        <div class="col-xl-3 col-sm-6 grid-margin stretch-card">
+                            <div class="card" style="background-color: #272727;">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-9">
+                                            <div class="d-flex align-items-center align-self-start">
+                                                <h3 class="mb-0">$1</h3>
+                                                <p class="text-success ms-2 mb-0 font-weight-medium">+0.0%</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <div class="icon icon-box-success ">
+                                                <span class="mdi mdi-arrow-top-right icon-item">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-right" viewBox="0 0 16 16">
+                                                                <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z"/>
+                                                        </svg>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h6 class="text-muted font-weight-normal">Voltium&nbsp;(VLTM) Price</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-sm-6 grid-margin stretch-card">
+                            <div class="card" style="background-color: #272727;">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-9">
+                                            <div class="d-flex align-items-center align-self-start">
+                                                <h3 class="mb-0">152.8141&nbsp;EH/s</h3>
+                                                <p class="text-success ms-2 mb-0 font-weight-medium">+11%</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <div class="icon icon-box-success">
+                                                <span class="mdi mdi-arrow-top-right icon-item">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-right" viewBox="0 0 16 16">
+                                                                <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z"/>
+                                                        </svg>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h6 class="text-muted font-weight-normal">Hash Rate</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-sm-6 grid-margin stretch-card">
+                            <div class="card" style="background-color: #272727;">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-9">
+                                            <div class="d-flex align-items-center align-self-start">
+                                                <h3 class="mb-0">1,000&nbsp;VLTM</h3>
+                                                <p class="text-danger ms-2 mb-0 font-weight-medium">-2.4%</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <div class="icon icon-box-danger">
+                                                <span class="mdi mdi-arrow-bottom-left icon-item">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-left" viewBox="0 0 16 16">
+                                                                <path fill-rule="evenodd" d="M2 13.5a.5.5 0 0 0 .5.5h6a.5.5 0 0 0 0-1H3.707L13.854 2.854a.5.5 0 0 0-.708-.708L3 12.293V7.5a.5.5 0 0 0-1 0v6z"/>
+                                                        </svg>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h6 class="text-muted font-weight-normal">Traded Volume</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-sm-6 grid-margin stretch-card">
+                            <div class="card" style="background-color: #272727;">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-9">
+                                            <div class="d-flex align-items-center align-self-start">
+                                                <h3 class="mb-0">200</h3>
+                                                <p class="text-success ms-2 mb-0 font-weight-medium">+3.5%</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <div class="icon icon-box-success ">
+                                                <span class="mdi mdi-arrow-top-right icon-item">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-right" viewBox="0 0 16 16">
+                                                                <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z"/>
+                                                        </svg>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h6 class="text-muted font-weight-normal"> Block Height</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        </div>
+        <div class="container">
+                <div class="row ">
+                        <div class="col-12 grid-margin">
+                            <div class="card" style="background-color: #272727;">
+                                <div class="card-body">
+                                    <h4 class="card-title">Latest Block</h4>
+                                    <div class="table-responsive">
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th> Hash </th>
+                                                    <th> Time </th>
+                                                    <th> Address </th>
+                                                    <th> Amount&nbsp;(VLTM) </th>
+                                                    <th> Status </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td> <a href="hash/">c951355abf2994965513df9058b66d27116bae98af45ea94189e59738083996a</a> </td>
+                                                    <td> 1642532465 </td>
+                                                    <td> VwEpiug8Ro96wCGyFZytg2nauHdg15qXpi </td>
+                                                    <td> 50 </td>
+                                                    <td>
+                                                        <div class="badge badge-outline-success">Approved</div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td> <a href="hash/">c951355abf2994965513df9058b66d27116bae98af45ea94189e59738083996a</a>  </td>
+                                                    <td> 1642532465 </td>
+                                                    <td> VwEpiug8Ro96wCGyFZytg2nauHdg15qXpi </td>
+                                                    <td> 50 </td>
+                                                    <td>
+                                                        <div class="badge badge-outline-success">Approved</div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td> <a href="hash/">c951355abf2994965513df9058b66d27116bae98af45ea94189e59738083996a</a>  </td>
+                                                    <td> 1642532465 </td>
+                                                    <td> VwEpiug8Ro96wCGyFZytg2nauHdg15qXpi </td>
+                                                    <td> 50 </td>
+                                                    <td>
+                                                        <div class="badge badge-outline-success">Approved</div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td> <a href="hash/">c951355abf2994965513df9058b66d27116bae98af45ea94189e59738083996a</a>  </td>
+                                                    <td> 1642532465 </td>
+                                                    <td> VwEpiug8Ro96wCGyFZytg2nauHdg15qXpi </td>
+                                                    <td> 50 </td>
+                                                    <td>
+                                                        <div class="badge badge-outline-success">Approved</div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td> <a href="hash/">c951355abf2994965513df9058b66d27116bae98af45ea94189e59738083996a</a>  </td>
+                                                    <td> 1642532465 </td>
+                                                    <td> VwEpiug8Ro96wCGyFZytg2nauHdg15qXpi </td>
+                                                    <td> 50 </td>
+                                                    <td>
+                                                        <div class="badge badge-outline-success">Approved</div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td> <a href="hash/">c951355abf2994965513df9058b66d27116bae98af45ea94189e59738083996a</a>  </td>
+                                                    <td> 1642532465 </td>
+                                                    <td> VwEpiug8Ro96wCGyFZytg2nauHdg15qXpi </td>
+                                                    <td> 50 </td>
+                                                    <td>
+                                                        <div class="badge badge-outline-success">Approved</div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td> <a href="hash/">c951355abf2994965513df9058b66d27116bae98af45ea94189e59738083996a</a>  </td>
+                                                    <td> 1642532465 </td>
+                                                    <td> VwEpiug8Ro96wCGyFZytg2nauHdg15qXpi </td>
+                                                    <td> 50 </td>
+                                                    <td>
+                                                        <div class="badge badge-outline-success">Approved</div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+        </div>
+        <footer class="footer" style="background-color: #272727;">
+            <div class="d-sm-flex justify-content-center justify-content-sm-between">
+              <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © vltmscan 2022</span>
+            </div>
+        </footer>
+        <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+        <script>
+            window.ga = function () {
+                ga.q.push(arguments);
+            };
+            ga.q = [];
+            ga.l = +new Date();
+            ga("create", "UA-XXXXX-Y", "auto");
+            ga("set", "anonymizeIp", true);
+            ga("set", "transport", "beacon");
+            ga("send", "pageview");
+        </script>
+        <script src="https://www.google-analytics.com/analytics.js" async></script>
+    </body>
+</html>
