@@ -10,19 +10,7 @@
 </div>
 
 <script>
-function loadDoc() {
-    const xhttp = new XMLHttpRequest();
-    xhttp.onload = function() {
-        document.getElementById("demo").innerHTML = this.responseText;
-    }
-    xhttp.open("GET", "https://voltiumwallet.com/api/blockinfo.php");
-    xhttp.send();
-}
-
-function blockVersion() {
-    const xhttp = new XMLHttpRequest();
-    xhttp.open("GET", "https://voltiumwallet.com/api/blockinfo.php");
-}
+    fetch('')
 </script>
 
 </body>
