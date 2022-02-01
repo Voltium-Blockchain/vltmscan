@@ -4,3 +4,5 @@
 node_modules
 dist
 .cache
+js/form.js
+js/hash.js
