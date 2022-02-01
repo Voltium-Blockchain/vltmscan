@@ -1,17 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <script src=""></script>
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
 <body>
+    <table class="table">
+        <thead>
+            <tr>
+                <th> Hash </th>
+                <th> Time </th>
+                <th> Address </th>
+                <th> Amount&nbsp;(VLTM) </th>
+                <th> Status </th>
+            </tr>
+        </thead>
+        <tbody id="data">
+            
+        </tbody>
+    </table>
 
-<h2>The XMLHttpRequest Object</h2>
-
-<div id="demo">
-<p>Let AJAX change this text.</p>
-<button type="button" onclick="loadDoc()">Change Content</button>
-</div>
-
-<script>
-    fetch('')
-</script>
-
+    <script>
+        $(document).ready(function () {
+           $.getJSON('https://voltiumwallet.com/api/txn.php', function (data) {
+               var explorer = '';
+               $.each(data, function (key, value) {
+                    explorer += '<tr>';
+                    explorer += '<td><a href="hash/">' + value.blockhash + '</a></td>';
+                    explorer += '<td style="color: #f5f5f5;">' + value.blocktime + '</td>';
+                    explorer += '<td style="color: #f5f5f5;">' + value.address + '</td>';
+                    explorer += '<td style="color: #f5f5f5;">' + value.amount + '</td>';
+                    explorer += '<td style="color: #f5f5f5;" id="tdcolor"><div class="badge badge-outline-success">' + value.category + '</div></td>';
+                    explorer += '</tr>';
+               });
+               $('#data').append(explorer);
+           });
+        });
+    </script>
 </body>
 </html>

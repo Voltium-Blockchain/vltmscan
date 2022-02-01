@@ -13,6 +13,7 @@
         <link rel="stylesheet" href="css/main.css" />
         <link rel="stylesheet" href="css/index.css" />
         <meta name="theme-color" content="#fafafa" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     </head>
     <body style="background-color: #c89c3d;">
         <header class="p-3 bg-dark text-white" style="background-color: #272727;">
@@ -169,70 +170,8 @@
                                                     <th> Status </th>
                                                 </tr>
                                             </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td> <a href="hash/">c951355abf2994965513df9058b66d27116bae98af45ea94189e59738083996a</a> </td>
-                                                    <td> 1642532465 </td>
-                                                    <td> VwEpiug8Ro96wCGyFZytg2nauHdg15qXpi </td>
-                                                    <td> 50 </td>
-                                                    <td>
-                                                        <div class="badge badge-outline-success">Approved</div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td> <a href="hash/">c951355abf2994965513df9058b66d27116bae98af45ea94189e59738083996a</a>  </td>
-                                                    <td> 1642532465 </td>
-                                                    <td> VwEpiug8Ro96wCGyFZytg2nauHdg15qXpi </td>
-                                                    <td> 50 </td>
-                                                    <td>
-                                                        <div class="badge badge-outline-success">Approved</div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td> <a href="hash/">c951355abf2994965513df9058b66d27116bae98af45ea94189e59738083996a</a>  </td>
-                                                    <td> 1642532465 </td>
-                                                    <td> VwEpiug8Ro96wCGyFZytg2nauHdg15qXpi </td>
-                                                    <td> 50 </td>
-                                                    <td>
-                                                        <div class="badge badge-outline-success">Approved</div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td> <a href="hash/">c951355abf2994965513df9058b66d27116bae98af45ea94189e59738083996a</a>  </td>
-                                                    <td> 1642532465 </td>
-                                                    <td> VwEpiug8Ro96wCGyFZytg2nauHdg15qXpi </td>
-                                                    <td> 50 </td>
-                                                    <td>
-                                                        <div class="badge badge-outline-success">Approved</div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td> <a href="hash/">c951355abf2994965513df9058b66d27116bae98af45ea94189e59738083996a</a>  </td>
-                                                    <td> 1642532465 </td>
-                                                    <td> VwEpiug8Ro96wCGyFZytg2nauHdg15qXpi </td>
-                                                    <td> 50 </td>
-                                                    <td>
-                                                        <div class="badge badge-outline-success">Approved</div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td> <a href="hash/">c951355abf2994965513df9058b66d27116bae98af45ea94189e59738083996a</a>  </td>
-                                                    <td> 1642532465 </td>
-                                                    <td> VwEpiug8Ro96wCGyFZytg2nauHdg15qXpi </td>
-                                                    <td> 50 </td>
-                                                    <td>
-                                                        <div class="badge badge-outline-success">Approved</div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td> <a href="hash/">c951355abf2994965513df9058b66d27116bae98af45ea94189e59738083996a</a>  </td>
-                                                    <td> 1642532465 </td>
-                                                    <td> VwEpiug8Ro96wCGyFZytg2nauHdg15qXpi </td>
-                                                    <td> 50 </td>
-                                                    <td>
-                                                        <div class="badge badge-outline-success">Approved</div>
-                                                    </td>
-                                                </tr>
+                                            <tbody id="data">
+                                                
                                             </tbody>
                                         </table>
                                     </div>
@@ -246,6 +185,7 @@
               <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © vltmscan 2022</span>
             </div>
         </footer>
+
         <script src="js/vendor/modernizr-3.11.2.min.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
