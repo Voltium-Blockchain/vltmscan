@@ -2,16 +2,16 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <meta name="description" content="Block Explorer for voltium VLTM" />
+        <meta name="description" content="" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Voltium Explorer</title>
 
         <link rel="manifest" href="site.webmanifest" />
-        <link rel="apple-touch-icon" href="https://sat02pap001files.storage.live.com/y4mnKV6s3W1h7Fe-s-vygPsjCGwAk50sxCygo4uPyOSYkwDF5fZIR2qbvVMuG3BmvJCBxKdnSdHCyLp2cjGPZmXt3xxAia1qStvh30hbXCI8os08xYQv1krkJU-Xc_1TJBKc75yMqkm_UPDEK7izaBUG1hyBFyS5_NDZ7L8g3F1OesToNLcDpVwgdisJsPWOi_5?width=192&height=192&cropmode=none" />
-        <link rel="stylesheet" href="css/normalize.css" />
-        <link rel="stylesheet" href="css/main.css" />
-        <link rel="stylesheet" href="css/index.css" />
+        <link rel="apple-touch-icon" href="icon.png" />
+        <link rel="stylesheet" href="../css/normalize.css" />
+        <link rel="stylesheet" href="../css/main.css" />
+        <link rel="stylesheet" href="../css/index.css" />
         <meta name="theme-color" content="#fafafa" />
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     </head>
@@ -41,8 +41,8 @@
                                         <li><a href="#" class="nav-link px-2 text-white">Nodes</a></li>
                                 </ul>
 
-                                <form action="/" method="GET" class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
-                                    <input type="search" name="s" id="s" style="color: #f5f5f5;" class="form-control form-control-dark" placeholder="Search by address/ txn hash/ block" aria-label="Search" />
+                                <form action="" method="GET" class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+                                        <input type="search" class="form-control form-control-dark" placeholder="Search by address/ txn hash/ block" aria-label="Search" />
                                 </form>
 
                                 <div class="text-end">
@@ -53,132 +53,56 @@
                 </div>
         </header>
 
-        <div class="container" style="margin-top: 50px;">
-                <div class="row">
-                        <div class="col-xl-3 col-sm-6 grid-margin stretch-card">
-                            <div class="card" style="background-color: #272727;">
-                                <div class="card-body">
-                                    <div class="row">
-                                        <div class="col-9">
-                                            <div class="d-flex align-items-center align-self-start">
-                                                <h3 class="mb-0">$1</h3>
-                                                <p class="text-success ms-2 mb-0 font-weight-medium">+0.0%</p>
-                                            </div>
-                                        </div>
-                                        <div class="col-3">
-                                            <div class="icon icon-box-success ">
-                                                <span class="mdi mdi-arrow-top-right icon-item">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-right" viewBox="0 0 16 16">
-                                                                <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z"/>
-                                                        </svg>
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <h6 class="text-muted font-weight-normal">Voltium&nbsp;(VLTM) Price</h6>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-sm-6 grid-margin stretch-card">
-                            <div class="card" style="background-color: #272727;">
-                                <div class="card-body">
-                                    <div class="row">
-                                        <div class="col-9">
-                                            <div class="d-flex align-items-center align-self-start">
-                                                <h3 class="mb-0">152.8141&nbsp;EH/s</h3>
-                                                <p class="text-success ms-2 mb-0 font-weight-medium">+11%</p>
-                                            </div>
-                                        </div>
-                                        <div class="col-3">
-                                            <div class="icon icon-box-success">
-                                                <span class="mdi mdi-arrow-top-right icon-item">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-right" viewBox="0 0 16 16">
-                                                                <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z"/>
-                                                        </svg>
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <h6 class="text-muted font-weight-normal">Hash Rate</h6>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-sm-6 grid-margin stretch-card">
-                            <div class="card" style="background-color: #272727;">
-                                <div class="card-body">
-                                    <div class="row">
-                                        <div class="col-9">
-                                            <div class="d-flex align-items-center align-self-start">
-                                                <h3 class="mb-0">1,000&nbsp;VLTM</h3>
-                                                <p class="text-danger ms-2 mb-0 font-weight-medium">-2.4%</p>
-                                            </div>
-                                        </div>
-                                        <div class="col-3">
-                                            <div class="icon icon-box-danger">
-                                                <span class="mdi mdi-arrow-bottom-left icon-item">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-left" viewBox="0 0 16 16">
-                                                                <path fill-rule="evenodd" d="M2 13.5a.5.5 0 0 0 .5.5h6a.5.5 0 0 0 0-1H3.707L13.854 2.854a.5.5 0 0 0-.708-.708L3 12.293V7.5a.5.5 0 0 0-1 0v6z"/>
-                                                        </svg>
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <h6 class="text-muted font-weight-normal">Traded Volume</h6>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-sm-6 grid-margin stretch-card">
-                            <div class="card" style="background-color: #272727;">
-                                <div class="card-body">
-                                    <div class="row">
-                                        <div class="col-9">
-                                            <div class="d-flex align-items-center align-self-start">
-                                                <h3 class="mb-0">200</h3>
-                                                <p class="text-success ms-2 mb-0 font-weight-medium">+3.5%</p>
-                                            </div>
-                                        </div>
-                                        <div class="col-3">
-                                            <div class="icon icon-box-success ">
-                                                <span class="mdi mdi-arrow-top-right icon-item">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-right" viewBox="0 0 16 16">
-                                                                <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z"/>
-                                                        </svg>
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <h6 class="text-muted font-weight-normal"> Block Height</h6>
-                                </div>
-                            </div>
-                        </div>
+        <div class="container" style="margin-top: 20px;">
+            <div class="col-lg-12 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title">Address</h4>
+                    <p class="card-description"> This transaction was broadcasted on Voltium Network
+                    </p>
+                    <div class="table-responsive">
+                      <table class="table table-dark">
+                        <thead>
+                          <tr>
+                            <td> Hash </td>
+                            <td> c951355abf2994965513df9058b66d27116bae98af45ea94189e59738083996a </td>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td> time </td>
+                            <td> 1642532465 </td>
+                          </tr>
+                          <tr>
+                            <td> Size </td>
+                            <td> 176 </td>
+                          </tr>
+                          <tr>
+                            <td> Confirmations </td>
+                            <td> 8 </td>
+                          </tr>
+                          <tr>
+                            <td> Fee </td>
+                            <td> 0.0001 VLTM </td>
+                          </tr>
+                          <tr>
+                            <td> nonce </td>
+                            <td> 24864 </td>
+                          </tr>
+                          <tr>
+                            <td> tx </td>
+                            <td> <a href="../tx/"> 496b4dada47f46d4d75db042f2f3b02dce57ad35f62e7e0360d891e94df3e3a4 </a> </td>
+                          </tr>
+                          <tr>
+                            <td> status </td>
+                            <td> <div class="badge badge-outline-success">Approved</div> </td>
+                          </tr>
+                        </tbody>
+                      </table>
                     </div>
-        </div>
-        <div class="container">
-                <div class="row ">
-                        <div class="col-12 grid-margin">
-                            <div class="card" style="background-color: #272727;">
-                                <div class="card-body">
-                                    <h4 class="card-title">Latest Block</h4>
-                                    <div class="table-responsive">
-                                        <table class="table">
-                                            <thead>
-                                                <tr>
-                                                    <th> Hash </th>
-                                                    <th> Time </th>
-                                                    <th> Address </th>
-                                                    <th> Amount&nbsp;(VLTM) </th>
-                                                    <th> Status </th>
-                                                </tr>
-                                            </thead>
-                                            <tbody id="data">
-
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                  </div>
                 </div>
+            </div>
         </div>
         <footer class="footer" style="background-color: #272727;">
             <div class="d-sm-flex justify-content-center justify-content-sm-between">
@@ -186,10 +110,9 @@
             </div>
         </footer>
 
-        <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
-        <script src="js/form.min.js"></script>
+        <script src="../js/vendor/modernizr-3.11.2.min.js"></script>
+        <script src="../js/plugins.js"></script>
+        <script src="../js/main.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
         <script>

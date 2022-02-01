@@ -1,10 +1,10 @@
 {
-  "name": " ",
+  "name": " Voltium Explorer",
   "version": "0.0.1",
-  "description": "",
-  "keywords": "",
+  "description": "Block explorer for Voltium (VLTM)",
+  "keywords": "block, tx, address",
   "license": "",
-  "author": "",
+  "author": "AntimonyIQ",
   "scripts": {
     "build": "parcel build index.html",
     "dev": "parcel index.html --open",
