@@ -20,8 +20,12 @@ function detailsHash() {
         $.getJSON(apix, function (data) {
             var explorer = '';
             $.each(data, function (key, value) {
+                function timeStamp() {
+                    const timeStamp = new Date(value.time * 1000);
+                    return timeStamp.toISOString().slice(0, 19).replace('T', ' ');
+                }
                 explorer += '<td> Time </td>';
-                explorer += '<td>' + value.time + '</td>';
+                explorer += '<td>' + timeStamp(); + '</td>';
             });
             $('#time').append(explorer);
         });
