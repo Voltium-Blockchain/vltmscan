@@ -71,7 +71,7 @@ function detailsHash() {
                 explorer += '<td> NextBlock </td>';
                 explorer += '<td>' + value.nextblockhash + '</td>';
             });
-            $('#previousblockhash').append(explorer);
+            $('#nextblockhash').append(explorer);
         });
      });
 
