@@ -36,7 +36,7 @@ function detailsHash() {
             var explorer = '';
             $.each(data, function (key, value) {
                 explorer += '<td> Size </td>';
-                explorer += '<td>' + value.size + 'MiB</td>';
+                explorer += '<td>' + value.size + ' MiB</td>';
             });
             $('#size').append(explorer);
         });
