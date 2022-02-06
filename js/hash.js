@@ -36,7 +36,7 @@ function detailsHash() {
             var explorer = '';
             $.each(data, function (key, value) {
                 explorer += '<td> Size </td>';
-                explorer += '<td>' + value.size + '</td>';
+                explorer += '<td>' + value.size + 'MiB</td>';
             });
             $('#size').append(explorer);
         });
@@ -59,6 +59,17 @@ function detailsHash() {
             $.each(data, function (key, value) {
                 explorer += '<td> PreviousBlock </td>';
                 explorer += '<td>' + value.previousblockhash + '</td>';
+            });
+            $('#previousblockhash').append(explorer);
+        });
+     });
+
+     $(document).ready(function () {
+        $.getJSON(apix, function (data) {
+            var explorer = '';
+            $.each(data, function (key, value) {
+                explorer += '<td> NextBlock </td>';
+                explorer += '<td>' + value.nextblockhash + '</td>';
             });
             $('#previousblockhash').append(explorer);
         });
